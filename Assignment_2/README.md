@@ -1,16 +1,53 @@
-# React + Vite
+# PayPal Replica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A front-end practice project that recreates the PayPal Open (Business) landing page hero section using React and Vite.
 
-Currently, two official plugins are available:
+This project was built as part of a college assignment. It is an unofficial learning project. It is not affiliated with or endorsed by PayPal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- React 19
+- Vite 8
+- ESLint
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- Responsive navigation bar with logo, menu links, Log In and Sign Up buttons
+- Personal / Business account switch
+- Hero section with headline, subtext and call to action buttons
+- Inline SVG logo and icons
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+Requires Node.js 20 or newer.
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the local URL shown in the terminal (usually http://localhost:5173).
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Create a production build in `dist/` |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+
+## Project Structure
+
+```
+paypal-replica/
+├── public/          Static assets (favicon, icons)
+├── src/
+│   ├── assets/      Images and SVGs
+│   ├── App.jsx      Page layout and components
+│   ├── App.css      Page styles
+│   ├── index.css    Global styles
+│   └── main.jsx     App entry point
+├── index.html
+└── vite.config.js
+```
